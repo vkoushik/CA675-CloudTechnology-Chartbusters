@@ -1,0 +1,3 @@
+create external table songsandgenre(songnumber bigint,albumname string,ArtistName string,Duration float,Title string,Year int,genre string)  row format delimited fields terminated by '~' location 's3://msdbucketdcu/songsandgenre';
+
+select count(1) from songsandgenre;
