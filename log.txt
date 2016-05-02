@@ -1,0 +1,38 @@
+04-15 19:28:01.359: E/AndroidRuntime(1992): FATAL EXCEPTION: main
+04-15 19:28:01.359: E/AndroidRuntime(1992): Process: com.example.blockbuster, PID: 1992
+04-15 19:28:01.359: E/AndroidRuntime(1992): java.lang.NoClassDefFoundError: Failed resolution of: Ljavax/security/sasl/Sasl;
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at org.apache.thrift.transport.TSaslClientTransport.<init>(TSaslClientTransport.java:72)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at com.amazon.hive.hivecommon.api.HiveServer2ClientFactory.createTransport(Unknown Source)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at com.amazon.hive.hivecommon.api.ZooKeeperEnabledExtendedHS2Factory.createClient(Unknown Source)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at com.amazon.hive.hivecommon.core.HiveJDBCCommonConnection.connect(Unknown Source)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at com.amazon.hive.hive.core.HiveJDBCConnection.connect(Unknown Source)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at com.amazon.hive.jdbc.common.BaseConnectionFactory.doConnect(Unknown Source)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at com.amazon.hive.jdbc.common.AbstractDriver.connect(Unknown Source)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at java.sql.DriverManager.getConnection(DriverManager.java:179)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at java.sql.DriverManager.getConnection(DriverManager.java:213)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at com.example.blockbuster.PopulateOnUi.onCreate(PopulateOnUi.java:44)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at android.app.Activity.performCreate(Activity.java:5937)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1105)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2251)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2360)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at android.app.ActivityThread.access$800(ActivityThread.java:144)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1278)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at android.os.Looper.loop(Looper.java:135)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at android.app.ActivityThread.main(ActivityThread.java:5221)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at java.lang.reflect.Method.invoke(Native Method)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at java.lang.reflect.Method.invoke(Method.java:372)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:899)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)
+04-15 19:28:01.359: E/AndroidRuntime(1992): Caused by: java.lang.ClassNotFoundException: Didn't find class "javax.security.sasl.Sasl" on path: DexPathList[[zip file "/data/app/com.example.blockbuster-1/base.apk"],nativeLibraryDirectories=[/vendor/lib, /system/lib]]
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	... 23 more
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	Suppressed: java.lang.ClassNotFoundException: javax.security.sasl.Sasl
+04-15 19:28:01.359: E/AndroidRuntime(1992): 		at java.lang.Class.classForName(Native Method)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 		at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 		at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 		at java.lang.ClassLoader.loadClass(ClassLoader.java:504)
+04-15 19:28:01.359: E/AndroidRuntime(1992): 		... 24 more
+04-15 19:28:01.359: E/AndroidRuntime(1992): 	Caused by: java.lang.NoClassDefFoundError: Class not found using the boot class loader; no stack available
